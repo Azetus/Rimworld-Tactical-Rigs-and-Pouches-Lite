@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Tactical Rigs and Pouches [Lite]</name>
+    <author>Aliza</author>
+    <packageId>Aliza.TacticalRigsAndPouchesBalancedLite</packageId>
+    <modDependencies>
+        <li>
+            <packageId>Aliza.ApparelContainerCore</packageId>
+            <displayName>ApparelContainerCore</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3682926769</steamWorkshopUrl>
+            <downloadUrl>https://github.com/Azetus/Apparel-Container-Core</downloadUrl>
+        </li>
+    </modDependencies>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Aliza.ApparelContainerCore</li>
+    </loadAfter>
+    <description>Tactical Rigs and Pouches [Lite]</description>
+</ModMetaData>

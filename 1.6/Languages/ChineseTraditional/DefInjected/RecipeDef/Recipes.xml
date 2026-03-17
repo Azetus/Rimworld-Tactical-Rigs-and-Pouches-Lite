@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <TRP_Lite_Upgrade_ShieldBeltToTactical.label>改裝護盾腰帶（添加附包）</TRP_Lite_Upgrade_ShieldBeltToTactical.label>
+    <TRP_Lite_Upgrade_ShieldBeltToTactical.description>通過添加加固附包和調整護盾模塊，將壹個標準護盾腰帶升級為戰術型。改裝後可以在維持護盾功能的同時攜帶額外的戰術設備。</TRP_Lite_Upgrade_ShieldBeltToTactical.description>
+    <TRP_Lite_Upgrade_ShieldBeltToTactical.jobString>正在改裝護盾腰帶</TRP_Lite_Upgrade_ShieldBeltToTactical.jobString>
+
+      <TRP_Lite_Craft_ShieldBeltWithTacticalPouches.label>制作護盾腰帶（戰術附包）</TRP_Lite_Craft_ShieldBeltWithTacticalPouches.label>
+    <TRP_Lite_Craft_ShieldBeltWithTacticalPouches.description>制作護盾腰帶（戰術附包）</TRP_Lite_Craft_ShieldBeltWithTacticalPouches.description>
+    <TRP_Lite_Craft_ShieldBeltWithTacticalPouches.jobString>正在制作護盾腰帶（戰術附包）</TRP_Lite_Craft_ShieldBeltWithTacticalPouches.jobString>
+</LanguageData>

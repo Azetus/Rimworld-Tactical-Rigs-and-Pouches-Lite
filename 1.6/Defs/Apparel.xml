@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Shield belt (tactical pouches) -->
+    <ThingDef ParentName="ApparelBase">
+        <defName>TRP_Lite_Apparel_ShieldBeltWithTacticalPouches</defName>
+        <label>Shield belt (tactical pouches)</label>
+        <description>A personal projectile-repulsion device with two tactical pouches for mounting other utility items. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks, extreme heat, or fire. It shuts down instantly if hit by EMP.</description>
+        <thingClass>Apparel</thingClass>
+        <graphicData>
+            <texPath>Shield_Belt_With_Pouch_Icon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <Mass>3</Mass>
+            <WorkToMake>14000</WorkToMake>
+            <Flammability>0.4</Flammability>
+            <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+            <EnergyShieldEnergyMax>1.1</EnergyShieldEnergyMax>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+
+        <smeltProducts>
+            <Plasteel>5</Plasteel>
+            <Steel>25</Steel>
+        </smeltProducts>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>BeltDefense</li>
+            </tags>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        </apparel>
+        <comps>
+            <li Class="ACC_ApparelContainerCore.Comps.Props.CompProperties_GenericPackForApparel">
+                <storageCapacity>2</storageCapacity>
+            </li>
+            <li Class="CompProperties_Shield">
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Tactical Chest Rig -->
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>TRP_Lite_Apparel_TacticalChestRig</defName>
+        <label>Tactical chest rig</label>
+        <description>A tactical load-bearing rig equipped with four large pouches, designed for rapid access to stored utility items.</description>
+        <thingClass>Apparel</thingClass>
+        <graphicData>
+            <texPath>Tactical_Chest_Rig_Icon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <techLevel>Industrial</techLevel>
+
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <WorkToMake>4500</WorkToMake>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+
+        <costStuffCount>60</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <useIngredientsForColor>true</useIngredientsForColor>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <displayPriority>300</displayPriority>
+        </recipeMaker>
+
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+
+        <apparel>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        </apparel>
+
+        <comps>
+            <li Class="ACC_ApparelContainerCore.Comps.Props.CompProperties_GenericPackForApparel">
+                <storageCapacity>4</storageCapacity>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Tactical Leg Rig -->
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>TRP_Lite_Apparel_TacticalLegRig</defName>
+        <label>Tactical leg rig</label>
+        <description>A tactical pouch system secured to the thigh, allowing the wearer to quickly deploy stored utility items on the move.</description>
+        <thingClass>Apparel</thingClass>
+        <graphicData>
+            <texPath>Tactical_Leg_Rig_Icon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <techLevel>Industrial</techLevel>
+
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>0.7</Mass>
+            <WorkToMake>4000</WorkToMake>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+
+        <costStuffCount>55</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <useIngredientsForColor>true</useIngredientsForColor>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <displayPriority>300</displayPriority>
+        </recipeMaker>
+
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <bodyPartGroups>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        </apparel>
+        <comps>
+            <li Class="ACC_ApparelContainerCore.Comps.Props.CompProperties_GenericPackForApparel">
+                <storageCapacity>2</storageCapacity>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+
+    <!-- Medieval Leg Pouch -->
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>TRP_Lite_Apparel_Medieval_LegPouch</defName>
+        <label>Medieval leg pouch</label>
+        <description>A small pocket secured to the leg with leather straps. Despite its limited single-slot capacity, its compact design ensures it does not hinder the wearer's movements.</description>
+        <thingClass>Apparel</thingClass>
+        <graphicData>
+            <texPath>Medieval_Leg_Pouch_Icon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <techLevel>Medieval</techLevel>
+
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>0.3</Mass>
+            <WorkToMake>1500</WorkToMake>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+
+
+        <costStuffCount>35</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <useIngredientsForColor>true</useIngredientsForColor>
+            <skillRequirements>
+                <Crafting>2</Crafting>
+            </skillRequirements>
+            <displayPriority>300</displayPriority>
+        </recipeMaker>
+
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <bodyPartGroups>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        </apparel>
+        <comps>
+            <li Class="ACC_ApparelContainerCore.Comps.Props.CompProperties_GenericPackForApparel">
+                <storageCapacity>1</storageCapacity>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Medieval Messenger Satchel -->
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>TRP_Lite_Apparel_Medieval_MessengerSatchel</defName>
+        <label>Medieval messenger satchel</label>
+        <description>A tough, oversized satchel featuring a cross-body strap. A standard-issue gear for medieval couriers and travelers, providing two additional utility slots.</description>
+        <thingClass>Apparel</thingClass>
+        <graphicData>
+            <texPath>Medieval_Messenger_Satchel_Icon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <techLevel>Medieval</techLevel>
+
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Mass>0.6</Mass>
+            <WorkToMake>2500</WorkToMake>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+
+        <costStuffCount>50</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <useIngredientsForColor>true</useIngredientsForColor>
+            <skillRequirements>
+                <Crafting>2</Crafting>
+            </skillRequirements>
+            <displayPriority>300</displayPriority>
+        </recipeMaker>
+
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        </apparel>
+        <comps>
+            <li Class="ACC_ApparelContainerCore.Comps.Props.CompProperties_GenericPackForApparel">
+                <storageCapacity>2</storageCapacity>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Neolithic Tribal Satchel -->
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>TRP_Lite_Apparel_Neolithic_TribalSatchel</defName>
+        <label>Tribal satchel</label>
+        <description>A primitive satchel fashioned from raw hides using crude stitching techniques. It is roughly made and lacks any structural support.</description>
+        <thingClass>Apparel</thingClass>
+        <graphicData>
+            <texPath>Neolithic_Tribal_Satchel_Icon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <techLevel>Neolithic</techLevel>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.3</Mass>
+            <WorkToMake>1200</WorkToMake>
+            <EquipDelay>0.5</EquipDelay>
+        </statBases>
+
+        <costStuffCount>25</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+            <useIngredientsForColor>true</useIngredientsForColor>
+            <displayPriority>300</displayPriority>
+        </recipeMaker>
+
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        </apparel>
+        <comps>
+            <li Class="ACC_ApparelContainerCore.Comps.Props.CompProperties_GenericPackForApparel">
+                <storageCapacity>1</storageCapacity>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>

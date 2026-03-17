@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <TRP_Lite_Apparel_ShieldBeltWithTacticalPouches.label>護盾腰帶(戰術附包)</TRP_Lite_Apparel_ShieldBeltWithTacticalPouches.label>
+    <TRP_Lite_Apparel_ShieldBeltWithTacticalPouches.description>一種力場裝置，附帶兩個戰術附包，可以掛載其他附件。它會阻擋遠方的子彈或手榴彈，但無法防禦近戰攻擊或熱能。如果被 EMP 衝擊到會無法運作。</TRP_Lite_Apparel_ShieldBeltWithTacticalPouches.description>
+
+    <TRP_Lite_Apparel_TacticalChestRig.label>戰術胸掛</TRP_Lite_Apparel_TacticalChestRig.label>
+    <TRP_Lite_Apparel_TacticalChestRig.description>壹個戰術胸掛，附帶有4個大型附包，可以快速取用其中存儲的工具。</TRP_Lite_Apparel_TacticalChestRig.description>
+
+    <TRP_Lite_Apparel_TacticalLegRig.label>戰術腿包</TRP_Lite_Apparel_TacticalLegRig.label>
+    <TRP_Lite_Apparel_TacticalLegRig.description>壹個可以固定在大腿上的戰術腿包，可以快速取用其中存儲的工具。</TRP_Lite_Apparel_TacticalLegRig.description>
+
+    <TRP_Lite_Apparel_Medieval_LegPouch.label>中世紀腿包</TRP_Lite_Apparel_Medieval_LegPouch.label>
+    <TRP_Lite_Apparel_Medieval_LegPouch.description>壹個通過皮帶固定在腿部的小型口袋。雖然容量僅能容納壹個格位，但它結構緊湊，完全不影響穿戴者的行動。</TRP_Lite_Apparel_Medieval_LegPouch.description>
+
+    <TRP_Lite_Apparel_Medieval_MessengerSatchel.label>中世紀信使包</TRP_Lite_Apparel_Medieval_MessengerSatchel.label>
+    <TRP_Lite_Apparel_Medieval_MessengerSatchel.description>壹個堅韌且寬大的挎包，通常采用斜跨式設計。它是中世紀信使和旅行者的標配，提供兩個額外的附包格位。</TRP_Lite_Apparel_Medieval_MessengerSatchel.description>
+
+    <TRP_Lite_Apparel_Neolithic_TribalSatchel.label>部落挎包</TRP_Lite_Apparel_Neolithic_TribalSatchel.label>
+    <TRP_Lite_Apparel_Neolithic_TribalSatchel.description>使用生皮通過粗糙的縫合技術制作而成的原始挎包，做工簡陋且缺乏結構支撐，。</TRP_Lite_Apparel_Neolithic_TribalSatchel.description>
+</LanguageData>

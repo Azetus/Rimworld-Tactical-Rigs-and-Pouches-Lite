@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RecipeDef>
+        <defName>TRP_Lite_Upgrade_ShieldBeltToTactical</defName>
+        <label>modify shield belt with pouches</label>
+        <description>Upgrade a standard shield belt by integrating reinforced pouches and recalibrating the shield modules. This modification allows the wearer to carry additional tactical gear.</description>
+        <jobString>modifying shield belt.</jobString>
+
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>4000</workAmount>
+        <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+
+        <useIngredientsForColor>false</useIngredientsForColor>
+
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
+
+        <researchPrerequisite>ShieldBelt</researchPrerequisite>
+
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Apparel_ShieldBelt</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Textiles</li>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Textiles</li>
+                <li>Leathers</li>
+            </categories>
+            <thingDefs>
+                <li>Apparel_ShieldBelt</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+
+
+        <allowMixingIngredients>true</allowMixingIngredients>
+
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+
+        <products>
+            <TRP_Lite_Apparel_ShieldBeltWithTacticalPouches>1</TRP_Lite_Apparel_ShieldBeltWithTacticalPouches>
+        </products>
+        <displayPriority>300</displayPriority>
+    </RecipeDef>
+
+
+    <RecipeDef>
+        <defName>TRP_Lite_Craft_ShieldBeltWithTacticalPouches</defName>
+        <label>make Shield belt (tactical pouches)</label>
+        <description>make Shield belt (tactical pouches)</description>
+        <jobString>crafting Shield belt (tactical pouches)</jobString>
+
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>14000</workAmount>
+        <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+
+        <useIngredientsForColor>false</useIngredientsForColor>
+
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
+
+        <researchPrerequisite>ShieldBelt</researchPrerequisite>
+
+        <ingredients>
+            <!-- 钢铁 -->
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <!-- 塑钢 -->
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <!-- 皮革 / 布料 -->
+            <li>
+                <filter>
+                    <categories>
+                        <li>Textiles</li>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>10</count>
+            </li>
+            <!-- 零部件 -->
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Textiles</li>
+                <li>Leathers</li>
+            </categories>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Plasteel</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <allowMixingIngredients>true</allowMixingIngredients>
+
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+
+        <products>
+            <TRP_Lite_Apparel_ShieldBeltWithTacticalPouches>1</TRP_Lite_Apparel_ShieldBeltWithTacticalPouches>
+        </products>
+        <displayPriority>300</displayPriority>
+    </RecipeDef>
+</Defs>

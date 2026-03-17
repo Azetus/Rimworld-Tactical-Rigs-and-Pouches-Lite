@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <TRP_Lite_Apparel_ShieldBeltWithTacticalPouches.label>Shield belt (tactical pouches)</TRP_Lite_Apparel_ShieldBeltWithTacticalPouches.label>
+    <TRP_Lite_Apparel_ShieldBeltWithTacticalPouches.description>A personal projectile-repulsion device with two tactical pouches for mounting other utility items. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks, extreme heat, or fire. It shuts down instantly if hit by EMP.</TRP_Lite_Apparel_ShieldBeltWithTacticalPouches.description>
+
+
+    <TRP_Lite_Apparel_TacticalChestRig.label>Tactical chest rig</TRP_Lite_Apparel_TacticalChestRig.label>
+    <TRP_Lite_Apparel_TacticalChestRig.description>A tactical load-bearing rig equipped with four large pouches, designed for rapid access to stored utility items.</TRP_Lite_Apparel_TacticalChestRig.description>
+
+    <TRP_Lite_Apparel_TacticalLegRig.label>Tactical leg rig</TRP_Lite_Apparel_TacticalLegRig.label>
+    <TRP_Lite_Apparel_TacticalLegRig.description>A tactical pouch system secured to the thigh, allowing the wearer to quickly deploy stored utility items on the move.</TRP_Lite_Apparel_TacticalLegRig.description>
+
+    <TRP_Lite_Apparel_Medieval_LegPouch.label>Medieval leg pouch</TRP_Lite_Apparel_Medieval_LegPouch.label>
+    <TRP_Lite_Apparel_Medieval_LegPouch.description>A small pocket secured to the leg with leather straps. Despite its limited single-slot capacity, its compact design ensures it does not hinder the wearer's movements.</TRP_Lite_Apparel_Medieval_LegPouch.description>
+
+    <TRP_Lite_Apparel_Medieval_MessengerSatchel.label>Medieval messenger satchel</TRP_Lite_Apparel_Medieval_MessengerSatchel.label>
+    <TRP_Lite_Apparel_Medieval_MessengerSatchel.description>A tough, oversized satchel featuring a cross-body strap. A standard-issue gear for medieval couriers and travelers, providing two additional utility slots.</TRP_Lite_Apparel_Medieval_MessengerSatchel.description>
+
+    <TRP_Lite_Apparel_Neolithic_TribalSatchel.label>Tribal satchel</TRP_Lite_Apparel_Neolithic_TribalSatchel.label>
+    <TRP_Lite_Apparel_Neolithic_TribalSatchel.description>A primitive satchel fashioned from raw hides using crude stitching techniques. It is roughly made and lacks any structural support.</TRP_Lite_Apparel_Neolithic_TribalSatchel.description>
+
+</LanguageData>
