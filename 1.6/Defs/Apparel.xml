@@ -51,9 +51,7 @@
             <li Class="ACC_ApparelContainerCore.Comps.Props.CompProperties_GenericPackForApparel">
                 <storageCapacity>2</storageCapacity>
             </li>
-            <li Class="CompProperties_Shield">
-                <blocksRangedWeapons>false</blocksRangedWeapons>
-            </li>
+            <li Class="CompProperties_Shield" />
         </comps>
         <tradeTags>
             <li>Armor</li>
