@@ -17,6 +17,7 @@
     <loadAfter>
         <li>Ludeon.RimWorld</li>
         <li>Aliza.ApparelContainerCore</li>
+        <li>erdelf.HumanoidAlienRaces</li>
     </loadAfter>
     <description>Tactical Rigs and Pouches [Lite]</description>
 </ModMetaData>
