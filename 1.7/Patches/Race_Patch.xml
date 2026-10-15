@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Humanoid Alien Races</li>
+            <!-- <li>erdelf.HumanoidAlienRaces</li> -->
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace</xpath>
+                        <value>
+                            <raceRestriction />
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction/whiteApparelList</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction</xpath>
+                        <value>
+                            <whiteApparelList />
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction/whiteApparelList</xpath>
+                    <value>
+                        <li>TRP_Lite_Apparel_ShieldBeltWithTacticalPouches</li>
+                        <li>TRP_Lite_Apparel_TacticalChestRig</li>
+                        <li>TRP_Lite_Apparel_TacticalLegRig</li>
+                        <li>TRP_Lite_Apparel_Medieval_LegPouch</li>
+                        <li>TRP_Lite_Apparel_Medieval_MessengerSatchel</li>
+                        <li>TRP_Lite_Apparel_Neolithic_TribalSatchel</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
