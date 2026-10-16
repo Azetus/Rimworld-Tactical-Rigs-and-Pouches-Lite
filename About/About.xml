@@ -21,5 +21,5 @@
         <li>erdelf.HumanoidAlienRaces</li>
     </loadAfter>
     <description>Tactical Rigs and Pouches [Lite]</description>
-    <modVersion IgnoreIfNoMatchingField="True">1.0.2</modVersion>
+    <modVersion IgnoreIfNoMatchingField="True">1.1.0</modVersion>
 </ModMetaData>
